@@ -1,0 +1,176 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_help
+
+- story: a1
+  steps:
+  - intent: ask_question
+  - action: action_generate_response
+
+
+- story: a3
+  steps:
+  - intent: credits
+  - action: action_extract_credits
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_help
+  - action: utter_did_that_help
+
+
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_help
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: fee_installment_story
+  steps:
+  - intent: fee_installments
+  - action: utter_fee_installment
+
+- story: less_installment_story
+  steps:
+  - intent: less_installment
+  - action: utter_less_installment
+
+- story:  remaining_fee_story
+  steps:
+  - intent:  remaining_fee
+  - action: utter_remaining_fee
+
+- story: installment_automatic_story
+  steps:
+    - intent: installment_automatic
+    - action: utter_installment_automatic
+
+- story: payment_problem_story
+  steps:
+    - intent: payment_problem
+    - action: utter_payment_problem
+
+- story:  student_union_financial_story
+  steps:
+    - intent: student_union_financial
+    - action: utter_student_union_financial
+
+- story: emotion_imbalance_financial_story
+  steps:
+    - intent: emotion_imbalance_financial
+    - action: utter_emotion_imbalance_financial
+
+- story: non_payment_story
+  steps:
+    - intent: non_payment
+    - action: utter_non_payment
+
+- story: university_suspend_story
+  steps:
+    - intent: university_suspend
+    - action: utter_university_suspend
+
+- story: one_installment_story
+  steps:
+    - intent: one_installment
+    - action: utter_one_installment
+
+- story: ask_advice_stress_story
+  steps:
+    - intent: ask_advice_stress
+    - action: utter_ask_advice_stress
+
+- story: express_inadequacy_story
+  steps:
+    - intent: express_inadequacy
+    - action: utter_express_inadequacy
+
+- story: consider_module_change_or_quitting_story
+  steps:
+    - intent: consider_module_change_or_quitting
+    - action: utter_consider_module_change_or_quitting
+
+- story: change_or_quitting_paid_story
+  steps:
+    - intent: change_or_quitting_paid
+    - action: utter_change_or_quitting_paid
+
+- story: escalate_issue_story
+  steps:
+    - intent: escalate_issue
+    - action: utter_escalate_issue
+
+- story: inquire_about_module_leader_story
+  steps:
+    - intent: inquire_about_module_leader
+    - action: utter_inquire_about_module_leader
+
+- story: switching_modules_friends_story
+  steps:
+    - intent: switching_modules_friends
+    - action: utter_switching_modules_friends
+
+- story: inquire_about_auditing_other_modules_story
+  steps:
+   - intent: inquire_about_auditing_other_modules
+   - action: utter_inquire_about_auditing_other_modules
+
+- story: module_change_cutoff_story
+  steps:
+    - intent: module_change_cutoff
+    - action: utter_module_change_cutoff
+
+- story: seek_guidance_from_others_story
+  steps:
+    - intent: seek_guidance_from_others
+    - action: utter_seek_guidance_from_others
+
+- story: issue_with_lecturer_story
+  steps:
+    - intent: issue_with_lecturer
+    - action: utter_issue_with_lecturer
+
+- story: student_representative_story
+  steps:
+    - intent: student_representative
+    - action: utter_student_representative
+
+- story: hopeless_module_story
+  steps:
+    - intent: hopeless_module
+    - action: utter_ hopeless_module
+
+- story: supervisor_for_dissertation_story
+  steps:
+    - intent: supervisor_for_dissertation
+    - action: utter_supervisor_for_dissertation
+
+- story: need_dissertation_goals
+  steps:
+    - intent: need_dissertation_goals
+    - action: utter_need_dissertation_goals
+
+- story: seek_guidance_module_selection_story
+  steps:
+    - intent: seek_guidance_module_selection
+    - action: utter_seek_guidance_module_selection
+
+- story: Course_Fee_story
+  steps:
+    - intent: course_fee
+    - action: action_extract_course_fees

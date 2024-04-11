@@ -1,0 +1,323 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - good
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+    - fine
+    - okay
+    - alright
+    
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+
+- intent: ask_question
+  examples: |
+    - What is the weather like today?
+    - Can you tell me about the history of Rome?
+    - How do I make a cake?
+    - What's the capital of France?
+    - Tell me a joke.
+    - How does photosynthesis work?
+
+
+- intent: credits
+  examples: |
+    - What are credits for [Software Development](subject)
+    - What are credits for [Web Technologies](subject)
+    - What are credits for [Masters Dissertation](subject)
+    - credits for [Performance Studies: Integrated Musicianship](subject)
+    - credits for [Civil Engineering Materials](subject)
+    - credits for [Computer Systems](subject)
+
+- intent: course_fee
+  examples: |
+    - what is the course fee for [Msc Computing](fee)
+    - what is the course fee for [Msc Drug Design and Biomedical Science](fee)
+    - what is the course fee for [Msc Global Logistics and Supply Chain Analytics](fee)
+
+- intent: fee_installments
+  examples: |
+    - I have a problem with my fee instalments
+    - Fee Installments Problem
+    - Fee problem
+
+- intent: less_installment
+  examples: |
+    - What if I pay a less agreed instalment than a  actual amount?
+    - what if i pay less installment
+    - i cant pay full installment at single payment
+
+- intent: remaining_fee
+  examples: |
+    - Will the remaining fee added to the next instalment automatically?
+    - will my installment add automatically to my next payment
+
+- intent: installment_automatic
+  examples: |
+    - if split the pay. which is three instalments, but I couldn't pay the whole instalment fee in the first term. If I paid the half amount. will the remaining amount be added to my Next instalment automatically? 
+    - what if i pay half amount will the remaining amount added to the automatically for the next payment
+    - if we skip the installment will the remaining amount will be  added to the next payment automatically
+
+- intent: payment_problem
+  examples: |
+    - if I have a problem with my payment, does that affect my coursework submission? Times like my Moodle will be blocked. Is there any option 
+    - if I have a problem with my payment, does that affect my  coursework  submission
+    - will my moodle get blocked if i have problem with my payment 
+    - what if i skip a payment will it effect my coursework submission ? 
+
+- intent: student_union_financial
+  examples: |
+    - Does the student union have any  authority to help students with the financial struggle and stuff?
+    - will the student union help us with financial issues at napier
+    - will student union have any access to help students to solve any financial issues
+
+- intent: emotion_imbalance_financial
+  examples: |
+    - What if I have an emotional imbalance due to a missed payment. Whom i can meet?
+    - what happens if i miss to pay my tuition fee due to emotional imbalance
+    - what if i find myself emotionally strained due to financial difficulties due to a missed payment, where could i seek professional assistance to address both the financial and emotional aspects of my situation?
+    - what if i experiencing emotional distress as a result of a missed payment
+
+- intent: non_payment
+  examples: |
+    - What are the consequences of non-payment to the university?
+    - What are the repercussions of failing to pay university fees, and where can students find assistance to mitigate these consequences?
+    - what are the nonpayment consequences students  face at university
+
+- intent: university_suspend
+  examples: |
+    - what if i miss the payment? Will the university suspend me for his academic progress? 
+    - will the university suspend me for the ignoring  the tuition fee
+    - in what cases of nonpayment i will get suspended
+    
+  
+- intent: one_installment
+  examples: |
+    - Will there be any exceptions for me?  if I have,  completely, missed one instalment of fee. 
+    - what will happen if i ignore one installment completely
+    - what happens if skip one installment completely
+
+- intent: ask_advice_stress
+  examples: |
+    - I'm feeling really stressed out about failing one of my modules. What should I do?
+    - I think I might fail one of my classes, and it's making me panic. Any advice?
+    - I'm in a state of panic because I believe I'm failing a module. Can you offer me some guidance?
+    - I'm quite stressed because I think I'm failing one of my courses. What steps should I take?
+    - I'm really worried about failing one of my modules and I don't know what to do. Can you help?
+    - I'm quite stressed. I think I'm failing one of my modules and I don't really know what to do. I'm really panicking as of late. Is there any advice that you'd be able to give me. I’m looking for some help.
+
+- intent: express_inadequacy
+  examples: |
+    - I don't think. I'm not really at the skill level I feel I should be in order to pass. Everyone else in the class seems to be understanding it much more than me and I'm just finding myself falling behind. In my lectures, I don't really understand what's being taught. I just don't feel like I'm at the same level as some of my peers and its getting me down.
+    - I'm feeling really inadequate in my class. Everyone seems to understand the material except me.
+    - I'm struggling to keep up with my peers in class. I feel like I'm not at the same level.
+    - I'm falling behind in my studies, and it's really getting me down.
+    - I'm having difficulty understanding the material in my lectures. I feel inadequate compared to my classmates.
+    - I'm not confident in my abilities to succeed in my class. I feel like I'm not good enough.
+ 
+- intent: consider_module_change_or_quitting
+  examples: |
+    - I'm feeling really upset and annoyed with my current module. I'm thinking of changing it or even quitting the course.
+    - I'm considering switching to a different module or possibly dropping out of the course. Can you help me understand the financial implications?
+    - I'm feeling frustrated with my module and I'm contemplating changing it or quitting altogether. Will there be any financial consequences?
+    - I'm thinking about changing my module or leaving the course because I'm not happy with it. Can you tell me if there are any financial penalties?
+    - I'm upset and considering changing my module or quitting the course. I don't want to incur any financial costs. Can you advise me on this?
+    - I'm feeling annoyed and thinking about changing my module or dropping out. Will there be any financial repercussions if I do?
+    - I'm considering quitting my course or changing my module because I'm not satisfied. I want to know if there are any financial obligations.
+
+- intent: change_or_quitting_paid
+  examples: |
+    - I've already paid for the course in full, but I'm feeling upset and annoyed with my module. I'm thinking of changing it or even quitting. Are there any financial implications?
+    - I've paid the full fees for the course, but I'm considering switching modules or dropping out. Will I lose my payment?
+    - I paid for the course upfront, but now I'm unhappy with it and thinking of changing my module or quitting. Will I get a refund?
+    - I've already paid for the course, but I'm upset and considering changing my module or leaving. Can you advise if there are any financial consequences?
+    - I've paid in full for the course, but I'm frustrated with my module and thinking of changing it or quitting. Will I lose the money I paid?
+    - I've paid for the course upfront, but I'm annoyed and contemplating changing my module or dropping out. Will there be any financial repercussions?
+
+- intent: escalate_issue
+  examples: |
+    - That’s not good enough! I'm really not happy and I'd like to escalate this issue. It's not what I expected. And I'm paying  a lot of money. I'm upset. I'm stressed about this module. It's just not making sense to me. It's not helping me progress in my career. Which is the main reason I enrolled in this course.
+    - That’s not good enough! I'm really not happy and I'd like to escalate this issue.
+    - It's not what I expected. And I'm paying a lot of money.
+    - I'm upset. I'm stressed about this module.
+    - It's just not making sense to me. It's not helping me progress in my career.
+
+- intent: inquire_about_module_leader
+  examples: |
+    - can speak to the module leader?
+    - Can I speak to the module leader about my concerns?
+    - Is it possible to have a discussion with the module leader regarding my issues?
+    - I need to talk to someone about my difficulties with the module. Can I speak to the module leader?
+    - Is there a way to schedule a meeting with the module leader to address my concerns?
+    - How can I request a meeting with the module leader to discuss my challenges?
+
+- intent: switching_modules_friends
+  examples: |
+    - I have friends in different modules, and I'm considering switching to be with them.
+    - Some of my friends are in other modules, and I'm thinking about joining them.
+    - I'm interested in switching modules because some of my friends are in different ones.
+    - I'm thinking about switching modules to be with my friends who are in different ones.
+    - Being with my friends in other modules is appealing, so I'm considering switching.
+    - I'm finding it really difficult, and I'm just not engaging with it. Really, and I've got some friends in different modules and might like to be with them as well.
+    - Some of my friends are in different modules, and I'm thinking about changing to be with them.
+
+- intent: inquire_about_auditing_other_modules
+  examples: |
+    - Is it possible for me to sit in on classes from other modules to see if they would be more suited for me?
+    - Can I audit classes from other modules to determine if they would be a better fit for me?
+    - How can I go about sitting in on classes from different modules to see if they align better with my interests?
+    - I'm interested in exploring other modules. Is there a way for me to attend their classes temporarily?
+    - what I was going to ask. Is there any way I could sit in other modules and see if their classes would be more suited for me?
+
+- intent: module_change_cutoff
+  examples: |
+    - What is the deadline for changing modules?
+    - When is the cutoff point for switching to a different module?
+    - Can you tell me the last date for changing modules?
+    - When is the deadline for requesting a module change?
+    - What's the cutoff point for me to be able to change module?
+    - When is the last day I can change my module?
+    - How long will I have to wait till I start a module to test it, and really see if it's for me before I have the opportunity to change?
+  
+- intent: seek_guidance_from_others
+  examples: |
+    - I'm  a bit concerned about falling behind in my current studies, and like I said, I've just not really been engaged. It's stressing me out quite a lot, and I've not put as much effort as I could have into this because I just don't really understand a lot of it. Is there anyone else you think I could seek guidance from?
+    - I'm concerned about falling behind in my current studies and feeling disengaged. Can you suggest anyone else I could seek guidance from?
+    - I feel like I'm falling behind and not understanding a lot of the material. Is there anyone else I could turn to for help and advice?
+    - I'm feeling overwhelmed and stressed because I'm not putting in enough effort due to my lack of understanding. Do you know of anyone else who could provide guidance?
+    - Given my current struggles and stress, I'm wondering if there's someone else I could seek guidance from to help me navigate my academic challenges?
+    
+- intent: issue_with_lecturer
+  examples: |
+    - what do you recommend if I really have an issue with the lecturer themselves?
+    - What do you recommend if I have an issue with the lecturer themselves?
+    - If I'm having a problem with the lecturer, what steps should I take?
+    - How should I handle a situation where I have an issue with the lecturer?
+    - Can you provide advice on what to do if I'm having difficulties with the lecturer?
+  
+- intent: student_representative
+  examples: |
+    - how would I contact or find my representative? Student representative.
+    - How would I contact or find my student representative?
+    - Can you tell me how to get in touch with my student rep?
+    - What's the process for contacting or locating my student representative?
+    - How can I reach out to my student representative?
+    - How do I locate the contact details for my student representative?
+
+- intent: hopeless_module
+  examples: |
+    - i feel very sad and hopeless doing this module
+    - i dont i will be able to pass this module because its very hard
+    - i am in hopeless situation because i cant understand this module
+
+- intent: supervisor_for_dissertation
+  examples: |
+    - I'm feeling a bit overwhelmed about choosing the right supervisor for my dissertation module, especially since I want to focus on data science and AI. Can you suggest someone who would be the best fit to supervise me in this field?I'm feeling a bit overwhelmed about choosing the right supervisor for my dissertation module, especially since I want to focus on data science and AI. Can you suggest someone who would be the best fit to supervise me in this field?
+    - I'm feeling overwhelmed about choosing the right supervisor for my dissertation module, particularly in the area of data science and AI. Can you suggest someone who would be the best fit to supervise me in this field?
+    - Choosing the right supervisor for my dissertation is stressing me out, especially since I want to focus on data science and AI. Can you recommend a suitable supervisor for me in this area?
+    - With my focus on data science and AI, I'm unsure about choosing the right supervisor for my dissertation. Can you recommend someone who would be well-suited to guide me in this area?
+    - I'm feeling uncertain about selecting the appropriate supervisor for my dissertation, especially given my interest in data science and AI. Do you have any recommendations for a supervisor with expertise in this field?
+    
+- intent: need_dissertation_goals
+  examples: |
+    - if I choose to center my dissertation on AI and data science, I'm feeling both excited and anxious about the future career paths that might open up for me. Could you provide some insights into the potential opportunities within this field?
+    - In data science, it's crucial to have clear goals and ideas for your master's dissertation. You need to know exactly what you want to do beforehand.
+    - Before starting your master's dissertation in data science, it's essential to define specific goals and ideas. Having a clear direction is key.
+    - Data science is a broad field, so it's important to narrow down your focus for your master's dissertation. You need to have a clear idea of what you want to achieve.
+    - For a master's dissertation in data science, it's vital to have well-defined goals and ideas. Knowing what you're looking for beforehand is crucial.
+    - Since data science covers a wide range of topics, it's important to have a clear focus for your master's dissertation. You need to know exactly what you're aiming to accomplish.
+    - Since data science encompasses a wide range of topics, it's important to have a focused approach for your master's dissertation. You need to know exactly what you want to explore.
+    
+- intent: seek_guidance_module_selection
+  examples: |
+    - The array of module options is overwhelming, and I'm struggling to determine which ones will best serve my goals. Can you please offer some guidance on specific modules that might be beneficial?
+    - The array of module options is overwhelming, and I'm struggling to determine which ones will best serve my goals. Can you please offer some guidance on specific modules that might be beneficial?
+    - I'm finding it difficult to choose modules that align with my goals. Can you provide some guidance on which ones might be beneficial for me?
+    - With so many module options available, I'm feeling overwhelmed and unsure about which ones to choose. Can you offer some advice on specific modules that might suit my goals?
+    - I'm having trouble deciding which modules to take to help me achieve my goals. Can you recommend some specific modules that might be beneficial for me?
+    
+    
+    
+    
+    
+    
+    

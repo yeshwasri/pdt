@@ -1,0 +1,163 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - fee_installments
+  - less_installment
+  - remaining_fee
+  - ask_question
+  - credits
+  - installment_automatic
+  - payment_problem
+  - student_union_financial
+  - emotion_imbalance_financial
+  - non_payment
+  - university_suspend
+  - one_installment
+  - ask_advice_stress
+  - express_inadequacy
+  - consider_module_change_or_quitting
+  - change_or_quitting_paid
+  - escalate_issue
+  - inquire_about_module_leader
+  - switching_modules_friends
+  - inquire_about_auditing_other_modules
+  - module_change_cutoff
+  - seek_guidance_from_others
+  - issue_with_lecturer
+  - student_representative
+  - hopeless_module
+  - supervisor_for_dissertation
+  - need_dissertation_goals
+  - seek_guidance_module_selection
+  - course_fee
+
+entities:
+  - subject
+  - fee
+
+
+    
+actions:
+  - action_generate_response
+  - action_extract_credits
+  - action_extract_course_fees
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_finance:
+  - text: "finance team will help you"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_installment_automatic:
+  - text: "to be honest, I don't know the answer because that's why you have this email, the finance team. Not to me. Uh, I'm not an expert on fees, to be honest. Um, but from what I understood, no. You can't. "
+
+
+  utter_help:
+    - text: "Okay, How can I help you today? "
+  utter_fee_installment:
+    - text: "Okay. So, what kind of problem it is? "
+
+  utter_less_installment:
+    - text: "Well, I, I don't think that's a good idea, to be honest. Um, I think the problem with studies in the university is because, you know, that's that's the lowest boundary. If the university asks you, you, the older students, not only yourself but all the students, to pay to the university. And but if you do less than that, if you do more than two, uh, 1 or 2 weeks, um, then that 1 or 2 months, then that will be the big problem for the university to make decisions, say, okay, maybe this student cannot make the payments, they're going to withdraw you directly. So I wouldn't suggest that, to be honest."
+
+  utter_remaining_fee:
+    - text: " To be honest I don't know the answer because that's why you have this email, the finance team. Not to me. Uh, I'm not an expert on fees, to be honest. Um, but from what I understood, no. You can't. "
+
+  utter_payment_problem:
+    - text: "I don't think there are any options, to be honest. I think because if you cannot pay, make the payment on time or to the exact amount, um, your system can be blocked and it might take quite a long while to unblock the account. So you might not be able to submit your, your course works anymore or on time yet. So that would be a really big question. So yes you can maybe you can apply for a deferral or uh receipt. But it's still the problem if the university if the university will, uh, unblock your, your account, uh, as quick as they can. But I doubt it to be honest. "
+
+  utter_student_union_financial:
+    - text: "I think the only thing they can do is they can have. You know, the back-forth negotiation with the university, but they won't make any decisions for you. Um, you still need to make a payment. The only thing is, they might say they're trying to understand what's happening at the moment in the university and help you. I understand the procedure, but I don't think there can be any power to replace or change that."
+
+  utter_emotion_imbalance_financial:
+    - text: "So , you can contact the financial department about your concerns regarding finance"
+
+  utter_non_payment:
+    - text: " your account will be blocked. Sorry. Your system will be unblocked. And. But if you have for a long time, um, you didn't make the payments, then the university has the right to withdraw your study. Um, and you won't be able to stay in the UK, and you have to leave the UK, uh, in the next 30 days. That will be all this thing about the visa, the Home Office regulations as well. "
+
+
+  utter_university_suspend:
+    - text: "I don't think they will suspend your, uh, studies progress, but. They might say, oh, they won't allow you to continue the existing, the current studies, you're going to stop there. And, uh, unless you make the payments afterwards or otherwise, you can withdraw. "
+
+  utter_one_installment:
+    - text: "I think I think the thing is, um, if you only miss one, I don't think that'll be a very big problem. You may be unblocked, or unlocked. Uh, sorry. Blocked and unlocked by the university afterwards. But, um, if you miss more than one, then that would be a very big question. The university will either ask you to pay the rest of the fees at once, because just in case, avoid this kind of missed payment or they will say, no, I cannot waste you directly. "
+
+
+  utter_ask_advice_stress:
+    - text: "So may I ask, what exactly is happening with the module?"
+
+  utter_express_inadequacy:
+    - text: "It is assumed that you have the same level of knowledge as the other students. And because it's the middle of the term already, unfortunately, I don't think there's any way you can change your module at this point. The only thing I can tell is you can try to get some support from your module leader. That might be helpful, but it really depends on whether you have understood the basic concept or know the basic background knowledge of this domain. "
+
+  utter_consider_module_change_or_quitting:
+    - text: "Have you paid by monthly instalments?"
+
+  utter_change_or_quitting_paid:
+    - text: "so and unfortunately, I don't think there's any way we can refund this payment, because you paid for the year. It doesn't matter if you do two weeks or three weeks, you started the education in the university. I think you can try to talk to the finance team. Anyway, you can’t refund because you just started this module. "
+
+  utter_escalate_issue:
+    - text: "I totally understand the situation, but Unfortunately, I can only suggest that you try to complete the module. You can't make changes this year. You have selected the pathway you wanted. So, unfortunately, I don't think there's any way you can make the changes you want. Just continue your studies and find more support from the module leader."
+
+  utter_inquire_about_module_leader:
+    - text: "Yes, you can. If you don’t fully understand your lessons. But if you don't really understand the basic concept in the domain, then that's a really big issue. You might ask the module leader if there's any books or any Resources online that can help, or tutorials you can follow. "
+
+  utter_switching_modules_friends:
+    - text: "Okay, so there's a couple of issues with that. So the first one is, it's quite late already to change your modules because it's supposed to do all the change transfers between modules before the week 4, and now it's already been seven. So I don't think it's gonna work in this case unfortunately. But, I think you might be able to get some support from the module coordinator, for example. They might give you some additional materials to help you pass the module. Also, you might be thinking about taking additional lectures but without writing their assessment to deal with that problem."
+
+  utter_inquire_about_auditing_other_modules:
+    - text: "Well yes, uh, why not? You can do whatever you like. Uh, we won't restrict you, saying you can't really go to other modules. The only question for you is whether you have enough time to do that because, you know, with three modules, you are already quite busy. Uh, you have your assessment in that module, and you might find a way to access their materials as well. Maybe you have friends to help you with that, that's great."
+
+  utter_module_change_cutoff:
+    - text: "So, basically, for each semester, you can change your modules until the end of week 3, which means, before the beginning of week 4. So you have two weeks at least to test these lectures and tell the PL or the PBT whether you want to make changes or not. So, yeah. That's basically what we're looking for most cases. Because the problem is that if you do that too late, then you might face problems, and you can't change modules in the long term. You can feel this module, just anyway."
+
+  utter_seek_guidance_from_others:
+    - text: "you might find some information from our libraries or modules, especially module leaders might give you some more support or suggestions on what exact materials to look at. Because the wild question for me is because I'm not familiar with which module you are talking about, and also I'm not sure about the module, how exactly the information they need, materials they need. So it's always good to talk to the module leader. But, I would warn you about this case because you're starting this program, and also you started modules already. I don't really think you're gonna waste your time, to be honest. Don't waste your time waiting and, you know, okay, more change on your own modules if he always good. About it."
+
+  utter_issue_with_lecturer:
+    - text: " you can contact the school, the subject group lead, or the head of teaching to complain about that, or you can talk to the program representative. They're gonna have a conversation space in the university, anyway, every year, every half, having half a year to have. We're gonna have a meeting with, um, the reps. Pretty helpful. But unfortunately, I don't think there's anywhere else you can go with that because, it's already challenging to contact because, you know, because possible, only one or two reasons you're gonna contact the school or somebody else and say, okay, I'm not happy with my lecturer. Can we make changes? No, that's not gonna happen between the university, to be honest."
+
+  utter_student_representative:
+    - text: "you should be able to get that information from the Moodle page, from your program's page. The yearly, we will leave the rep's email address on the page, on the front page, and it will come page. So you should be able to see that over there. Otherwise, you can contact your PL. Just double-check which boost you're in, the reps, and that you want to just tell him or her there's something you want to talk about. Okay. Okay, thank you. That's something. I'll consider. Um, okay, that's pretty much all the questions I had. So thank you for your time. Okay, no problem. Just let me know if there's anything else I can help with. Okay, good. That's it. Hello, thank you."
+
+  utter_ hopeless_module:
+    - text: "If you want to look about other modules, you can go to the module descriptions which is so great. I’ll send you the link on the chat. So, you can see all of the modules. But I really a little bit worried about whether you have time to think about that or to do that. And is there anything else I can help you today?"
+
+  utter_supervisor_for_dissertation:
+    - text: "For Data Science, you mean?"
+
+  utter_need_dissertation_goals:
+    - text: "we do have some collaborations with some industries who properly can give some ideas about that. And you can talk to the career future department. They gonna give you some in-depth suggestions. But for my side, each of the lecturers, we have connections with some universities and companies, they might give some suggestions as well if you like."
+
+  utter_seek_guidance_module_selection:
+    - text: "You might need to think about what exactly you want to learn. So, think about what you have learned so far."
+
+
+
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

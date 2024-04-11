@@ -1,0 +1,28 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-fee",
+      "2": "I-fee",
+      "3": "L-fee",
+      "4": "U-fee",
+      "5": "B-subject",
+      "6": "I-subject",
+      "7": "L-subject",
+      "8": "U-subject",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-fee": 1,
+      "I-fee": 2,
+      "L-fee": 3,
+      "U-fee": 4,
+      "B-subject": 5,
+      "I-subject": 6,
+      "L-subject": 7,
+      "U-subject": 8,
+      "O": 0
+    },
+    "num_tags": 9
+  }
+]
